@@ -6,6 +6,13 @@ public abstract class Property {
 	protected String type;
 	protected int price;
 
+	public Property(String landName, String owner, String type, int price) {
+		this.landName = landName;
+		this.owner = owner;
+		this.type = type;
+		this.price = price;
+	}
+
 	public void setLandName(String landName) {
 		this.landName = landName;
 	}
@@ -38,14 +45,5 @@ public abstract class Property {
 		return price;
 	}
 
-	public void Estate(
-			String landName, String owner, String type, int price) {
-		this.landName = landName;
-		this.owner = owner;
-		this.type = type;
-		this.price = price;
-	}
-
 	public abstract void RealEstate();
-
 }

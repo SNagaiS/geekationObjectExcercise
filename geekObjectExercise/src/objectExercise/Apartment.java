@@ -3,8 +3,8 @@ package objectExercise;
 public class Apartment extends Property {
 	private String size;
 
-	public void Estate(String landName, String owner, String type, int price, String size) {
-		super.Estate(landName, owner, type, price);
+	Apartment(String landName, String owner, String type, int price, String size) {
+		super(landName, owner, type, price);
 		this.size = size;
 	}
 
@@ -17,6 +17,5 @@ public class Apartment extends Property {
 		System.out.println("物件価格：" + price + "円");
 		System.out.println("間取り：" + size);
 		System.out.println("=============================");
-
 	}
 }
